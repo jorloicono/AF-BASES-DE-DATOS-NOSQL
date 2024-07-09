@@ -2,10 +2,30 @@
 
 ## CONTENIDOS 
 
-- Introducción.
-- Bases de datos Relacionales.
-- NoSQL.
-- Redis.
-- MongoDB.
-- Apache Cassandra.
-- Neo4J
+### INTRODUCCIÓN
+
+- Datos estructurados y no estructurados I: https://www.linkedin.com/pulse/datos-estructurados-semiestructurados-y-julio-c%C3%A9sar-bastidas/
+- Datos estructurados y no estructurados II: https://palomarecuero.wordpress.com/2022/03/30/estructurados-semi-estructurados-no-estructurados-como-son-tus-datos/
+
+### BBDD RELACIONALES
+
+- Clausulas SQL: https://www.ticportal.es/glosario-tic/base-datos-sql
+- Cursos gratuitos SQL: https://learn.microsoft.com/es-es/training/browse/
+
+### NOSQL
+
+- NoSQL en el Big Data: https://www.projectpro.io/article/nosql-vs-sql-4-reasons-why-nosql-is-better-for-big-data-applications/86
+- Tipos BBDD NoSQL: https://aprenderbigdata.com/bases-de-datos-nosql/
+- Motores BBDD NoSQL: https://www.grapheverywhere.com/bases-de-datos-nosql-marcas-tipos-ventajas/
+
+### MONGODB
+
+- BBDD Documental: https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/bases-de-datos-documentales/
+- Guias MongoDB: https://www.tutorialesprogramacionya.com/mongodbya/
+- MongoDB University: https://learn.mongodb.com/
+
+### REDIS
+
+### APACHE CASSANDRA
+
+### NEO4J
