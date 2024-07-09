@@ -23,6 +23,7 @@
 - BBDD Documental: https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/bases-de-datos-documentales/
 - Guias MongoDB: https://www.tutorialesprogramacionya.com/mongodbya/
 - MongoDB University: https://learn.mongodb.com/
+- JSON Crack: https://jsoncrack.com/editor
 
 ### REDIS
 
