@@ -27,6 +27,7 @@
 - Esquemas devalidación https://www.mongodb.com/docs/manual/core/schema-validation/
 - Relaciones en MongoDB: https://www.knowledgehut.com/blog/web-development/data-relationships-in-mongodb
 - Modelado de colecciones: https://www.mongodb.com/docs/manual/core/data-modeling-introduction/
+- Charlas cylon (articulos): https://charlascylon.com/tutorialmongo
 
 ### REDIS
 
