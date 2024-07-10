@@ -24,6 +24,9 @@
 - Guias MongoDB: https://www.tutorialesprogramacionya.com/mongodbya/
 - MongoDB University: https://learn.mongodb.com/
 - JSON Crack: https://jsoncrack.com/editor
+- Esquemas devalidación https://www.mongodb.com/docs/manual/core/schema-validation/
+- Relaciones en MongoDB: https://www.knowledgehut.com/blog/web-development/data-relationships-in-mongodb
+- Modelado de colecciones: https://www.mongodb.com/docs/manual/core/data-modeling-introduction/
 
 ### REDIS
 
