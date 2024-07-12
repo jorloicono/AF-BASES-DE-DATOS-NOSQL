@@ -1,0 +1,27 @@
+-- STRINGS
+
+-- Escritura
+
+set nombre "jorge"
+
+mset apellido "lopez" rol "profesor"
+
+append curso "nosql"
+
+-- Consulta
+
+get nombre
+
+mget apellido rol curso
+
+-- Manipulacion 
+
+set edad 30
+
+incr edad
+incrby edad 10
+
+decr edad
+decrby edad 10
+
+append curso "mongodb"
