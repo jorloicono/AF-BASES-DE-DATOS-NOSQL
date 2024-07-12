@@ -61,3 +61,36 @@ llen alumnos
 lrem alumnos 1 "jorge"
 
 lrem alumnos -2 "jorge"
+
+-- HASHES
+
+--Crear hash
+
+hset poet:Verlaine nationality French
+
+hset poet:Verlaine nationality Francais
+
+-- Crearlo con mas de un valor
+
+hmset poet:Verlaine born 1884 died 1896 
+
+-- Obtener datos de el
+
+hget poet:Verlaine nationality
+
+hmget poet:Verlaine born died 
+
+hmget poet:Jorge born died 
+
+-- Ver claves y valores
+
+hkeys poet:Verlaine
+hvals poet:Verlaine
+
+hgetall poet:Verlaine
+
+-- Mas manipulacion
+
+hlen poet:Verlaine
+
+hdel poet:Verlaine born died
