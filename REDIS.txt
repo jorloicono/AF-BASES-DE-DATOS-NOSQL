@@ -122,3 +122,19 @@ sinter presidents kings beatles
 sdiff presidents kings beatles
 
 sunion presidents kings beatles
+
+-- SORTED SETS 
+
+zadd alumnos 1 "jorge" 
+
+zadd alumnos 2 "jose" 3 "pedro"
+
+zrange alumnos 0 3
+
+zcard alumnos 
+
+zscore alumnos "jorge"
+
+zrank alumnos "jorge"
+
+zrem alumnos "jorge"
