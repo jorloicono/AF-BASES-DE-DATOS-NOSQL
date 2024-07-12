@@ -25,3 +25,39 @@ decr edad
 decrby edad 10
 
 append curso "mongodb"
+
+-- LISTS
+
+-- Añadir elementos por la izq
+lpush alumnos "jorge"
+lpush alumnos "luis"
+lpush alumnos "jose"
+lpush alumnos "ana"
+lpush alumnos "esther"
+
+-- Añadir por la derecha
+
+rpush alumnos "enrique"
+
+-- Añadir en bloque
+
+lpushx alumnos "antonio" "maria" "juan"
+
+-- Consultar un rango
+
+lrange alumnos 0 3
+
+lrange alumnos -3 -1
+
+-- Consultar un indice
+lindex alumnos 2
+
+-- Ver la longitud
+
+llen alumnos
+
+-- Eliminar ocurrencias
+
+lrem alumnos 1 "jorge"
+
+lrem alumnos -2 "jorge"
