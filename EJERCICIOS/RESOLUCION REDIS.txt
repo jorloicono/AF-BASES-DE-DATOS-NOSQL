@@ -1,0 +1,47 @@
+Paso a Paso
+
+1. Almacenar Información de los Usuarios
+Utiliza hashes para almacenar la información de cada usuario.
+
+
+HSET user:1 name "Alice" email "alice@example.com"
+HSET user:2 name "Bob" email "bob@example.com"
+
+2. Crear y Gestionar Tareas
+Utiliza listas para almacenar las tareas. Cada tarea será un hash.
+
+
+LPUSH tasks "task:1" "task:2" "task:3"
+HSET task:1 title "Setup project" description "Initialize the project repository and setup environment" created "2024-07-11"
+HSET task:2 title "Develop feature X" description "Implement the feature X according to specifications" created "2024-07-12"
+HSET task:3 title "Write documentation" description "Document the feature X and update the README file" created "2024-07-13"
+
+3. Asignar Tareas a los Usuarios
+Utiliza sets para mantener un registro de las tareas asignadas a cada usuario.
+
+SADD user:1:tasks "task:1" "task:3"
+SADD user:2:tasks "task:2"
+
+4. Listar Tareas Pendientes de un Usuario
+Utiliza el comando SMEMBERS para listar las tareas asignadas a un usuario y luego HGETALL para obtener los detalles de cada tarea.
+
+SMEMBERS user:1:tasks
+# Luego, para cada tarea obtenida:
+HGETALL task:1
+
+5. Marcar Tareas como Completadas
+Utiliza una lista para mantener las tareas completadas por cada usuario y actualiza un contador en un hash para llevar el registro de tareas completadas.
+
+RPOP user:1:tasks "task:1"
+LPUSH user:1:completed_tasks "task:1"
+HINCRBY user:1 stats:completed_tasks 1
+
+6. Obtener un Ranking de Usuarios por Número de Tareas Completadas
+Utiliza un sorted set para llevar el ranking de usuarios según el número de tareas completadas.
+
+ZADD completed_tasks_ranking 1 user:1
+ZADD completed_tasks_ranking 2 user:2
+
+Luego, puedes obtener el ranking de usuarios:
+
+ZRANGE completed_tasks_ranking 0 -1 WITHSCORES
