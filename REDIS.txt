@@ -94,3 +94,31 @@ hgetall poet:Verlaine
 hlen poet:Verlaine
 
 hdel poet:Verlaine born died
+
+-- SETS
+
+sadd alumnos "jorge" "pedro" "luis"
+
+sadd alumnos "jorge" "ana"
+
+smembers alumnos
+
+sismember alumnos "jorge"
+
+scard alumnos
+
+srandmember alumnos 3
+
+spop alumnos 2 
+
+srem alumnos "ana"
+
+sadd presidents "George" "John" "Thomas" "James"
+sadd kings "Edward" "Henry" "John" "James" "George"
+sadd beatles "John" "George" "Paul" "Ringo"
+
+sinter presidents kings beatles
+
+sdiff presidents kings beatles
+
+sunion presidents kings beatles
