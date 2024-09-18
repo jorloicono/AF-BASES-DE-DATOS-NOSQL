@@ -2,6 +2,7 @@
 
 ## CONTENIDOS 
 
+
 ### INTRODUCCIÓN
 
 - Datos estructurados y no estructurados I: https://www.linkedin.com/pulse/datos-estructurados-semiestructurados-y-julio-c%C3%A9sar-bastidas/
